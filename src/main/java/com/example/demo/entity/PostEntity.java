@@ -21,7 +21,7 @@ public class PostEntity implements Serializable{
 	private static final long serialVersionUID = -2170897015344177815L;
 
 	@Id
-  	@Column(name = "ID_POST")
+  	@Column(name = "ID_PRODUCTO")
   	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "seqPost")
     @SequenceGenerator(sequenceName = "SEQ_POST", allocationSize = 1, name = "seqPost")
 	private Long id;

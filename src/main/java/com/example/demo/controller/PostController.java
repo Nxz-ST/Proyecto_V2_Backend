@@ -40,6 +40,7 @@ public class PostController {
 			return new ResponseEntity<>(HttpStatus.NOT_FOUND);
 		}
 	}
+
 	@PostMapping("/Post")
 	  public ResponseEntity<PostEntity> createTutorial(@RequestBody PostEntity p) {
 	    try {
@@ -65,6 +66,7 @@ public class PostController {
 	      return new ResponseEntity<>(HttpStatus.NOT_FOUND);
 	    }
 	  }
+
 	@DeleteMapping("/post/{id}")
 	  public ResponseEntity<HttpStatus> deletePost(@PathVariable("id") long id) {
 	    try {
